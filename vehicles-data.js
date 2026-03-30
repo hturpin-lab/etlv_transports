@@ -239,7 +239,7 @@ const vehiclesData = [
         subtitle: "The folding electric bike",
         company: "Eovolt / SH Cycles",
         description: "The Eovolt Morning Origins is a lightweight (16.5 kg) folding electric bike with 16-inch wheels. It features a 250W brushless rear hub motor with torque sensor, a 231Wh battery integrated into the seat post, and up to 50 km range. Designed and assembled in France for urban mobility.",
-        image: "https://www.shcycles.fr/wp-content/uploads/2025/07/velo-pliant-electrique-eovolt-morning-noir-onyx-2-1.jpg",
+        image: "https://www.shcycles.fr/wp-content/uploads/2025/07/velo-pliant-electrique-eovolt-morning-noir-onyx-2-1-600x423.jpg.webp",
         website: "https://www.shcycles.fr/product/velo-pliant-electrique-eovolt-morning-origins/",
         equipment: {
             title: "Equipment and Software Required for Presentation",

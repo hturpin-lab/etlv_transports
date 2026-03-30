@@ -85,7 +85,7 @@ const vehiclesData = [
         "Give your clients a document (A4 paper) including a detailed preliminary estimate and the total price of the vehicle",
         "Be as convincing as possible!"
     ]
-},    {
+},    /*{
         id: "eclectic-2.0",
         title: "Eclectic 2.0",
         subtitle: "The first autonomous urban electric vehicle",

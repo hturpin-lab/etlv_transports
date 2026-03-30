@@ -49,7 +49,7 @@ const vehiclesData = [
     subtitle: "The classic motorized bike reimagined by Pininfarina",
     company: "Leftfield Bikes",
     description: "Designed by Pininfarina, the e-Solex is the classic motorized bike that has risen from the ashes in a contemporary mood! It oozes personality thanks to its unique look 'n feel. Easy to handle, the e-Solex can reach speeds up to 25 km/h. The electric engine is located in the rear wheel hub and provides an autonomy up to 40 km. The Original VéloSoleX, as ridden by Brigitte Bardot and Steve McQueen.",
-    image: "https://www.leftfieldbikes.com/wp-content/uploads/2021/03/solex-rouge-1024x1024.jpg",
+    image: "https://www.leftfieldbikes.com/wp-content/uploads/solex_2012_e-solex.jpg",
     website: "https://www.leftfieldbikes.com/shop/transport/e-solex/",
     equipment: {
         title: "Equipment and Software Required for Presentation",
@@ -122,7 +122,7 @@ const vehiclesData = [
             "Be as convincing as possible!"
         ]
     },
-    {
+    /*{
         id: "elektorwheelie",
         title: "ElektorWheelie",
         subtitle: "The self-balancing electric unicycle",
@@ -158,14 +158,14 @@ const vehiclesData = [
             "Give your clients a document (A4 paper) including a detailed preliminary estimate and the total price of the vehicle",
             "Be as convincing as possible!"
         ]
-    },
+    },*/
     {
         id: "enicycle",
         title: "Enicycle",
         subtitle: "The self-balancing electric unicycle",
         company: "Focus Designs",
         description: "The Enicycle (Self-Balancing Unicycle - SBU) is a compact electric vehicle that uses gyroscopic technology to maintain balance. It offers a unique riding experience combining portability with electric mobility.",
-        image: "https://focusdesigns.com/wp-content/uploads/2011/09/SBU_home.png",
+        image: "https://focusdesigns.com/wp-content/uploads/2013/08/SBU-NewLogo.jpg",
         website: "https://focusdesigns.com/",
         equipment: {
             title: "Equipment and Software Required for Presentation",
@@ -202,7 +202,7 @@ const vehiclesData = [
         subtitle: "The hydrogen fuel cell vehicle",
         company: "Honda",
         description: "The Honda CR-V e:FCEV is America's first plug-in hydrogen fuel cell electric vehicle. It combines a state-of-the-art fuel cell module with battery plug-in charging, enabling emission-free city driving and the flexibility of rapid hydrogen refueling. The only emission is water vapor.",
-        image: "https://automobiles.honda.com/-/media/Brand/Automobiles/Future-Cars/2026/CR-V-e-FCEV/2026-Honda-CR-V-e-FCEV-Exterior-01.jpg",
+        image: "media/honda.png",
         website: "https://automobiles.honda.com/cr-v-fcev",
         equipment: {
             title: "Equipment and Software Required for Presentation",
@@ -239,7 +239,7 @@ const vehiclesData = [
         subtitle: "The folding electric bike",
         company: "Eovolt / SH Cycles",
         description: "The Eovolt Morning Origins is a lightweight (16.5 kg) folding electric bike with 16-inch wheels. It features a 250W brushless rear hub motor with torque sensor, a 231Wh battery integrated into the seat post, and up to 50 km range. Designed and assembled in France for urban mobility.",
-        image: "https://www.shcycles.fr/wp-content/uploads/2025/07/eovolt-morning-origins-velo-pliant-electrique-600x600.jpg",
+        image: "https://www.shcycles.fr/wp-content/uploads/2025/07/velo-pliant-electrique-eovolt-morning-noir-onyx-2-1.jpg",
         website: "https://www.shcycles.fr/product/velo-pliant-electrique-eovolt-morning-origins/",
         equipment: {
             title: "Equipment and Software Required for Presentation",
@@ -276,7 +276,7 @@ const vehiclesData = [
         subtitle: "The compact folding electric bike",
         company: "YikeBike",
         description: "The YikeBike Model V is a compact folding electric bike with a unique design. It features a 20-inch front wheel and 8-inch rear wheel, reaching speeds of 23 km/h with a range of 20 km. The 313Wh battery charges in 90 minutes, and the bike folds in under 20 seconds.",
-        image: "https://www.yikebike.com/wp-content/uploads/2014/12/yikebike-model-v.jpg",
+        image: "https://www.yikebike.com/wp-content/uploads/2016/06/Model-V-Update.jpg",
         website: "https://www.yikebike.com/model-v/",
         equipment: {
             title: "Equipment and Software Required for Presentation",

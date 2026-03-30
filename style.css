@@ -1,0 +1,765 @@
+/* Variables et reset - Couleurs de l'Angleterre */
+:root {
+    --england-red: #C8102E;
+    --england-red-dark: #9e0a24;
+    --england-red-light: #e03e5e;
+    --england-white: #FFFFFF;
+    --england-blue: #012169;
+    --england-blue-dark: #00103d;
+    --england-blue-light: #1a3a8c;
+    --secondary-color: #2ecc71;
+    --dark-bg: #1a1a2e;
+    --light-bg: #f5f5f5;
+    --text-dark: #1e1e1e;
+    --text-light: #4a4a4a;
+    --card-bg: #ffffff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s ease;
+}
+
+[data-theme="dark"] {
+    --england-red: #e03e5e;
+    --england-red-dark: #c8102e;
+    --england-blue: #3a6ea5;
+    --england-white: #e0e0e0;
+    --light-bg: #1a1a2e;
+    --card-bg: #16213e;
+    --text-dark: #e0e0e0;
+    --text-light: #b0b0b0;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, var(--light-bg) 0%, #e8e8e8 100%);
+    color: var(--text-dark);
+    transition: var(--transition);
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Union Jack subtle background pattern */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-image: 
+        repeating-linear-gradient(45deg, rgba(192, 16, 46, 0.02) 0px, rgba(192, 16, 46, 0.02) 2px, transparent 2px, transparent 8px),
+        repeating-linear-gradient(135deg, rgba(1, 33, 105, 0.02) 0px, rgba(1, 33, 105, 0.02) 2px, transparent 2px, transparent 8px);
+    z-index: 0;
+}
+
+/* Navigation */
+.navbar {
+    background: var(--england-white);
+    box-shadow: 0 2px 20px rgba(192, 16, 46, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--england-red);
+}
+
+.nav-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.logo-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--england-red) 0%, var(--england-blue) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-controls {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: 2px solid var(--england-red);
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--england-red);
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: var(--transition);
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    background: var(--england-red);
+    color: white;
+    transform: rotate(15deg);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: var(--england-red);
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Wrapper pour la navigation */
+.nav-wrapper {
+    flex: 1;
+    margin-left: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav-wrapper::-webkit-scrollbar {
+    height: 4px;
+}
+
+.nav-wrapper::-webkit-scrollbar-track {
+    background: rgba(192, 16, 46, 0.1);
+    border-radius: 4px;
+}
+
+.nav-wrapper::-webkit-scrollbar-thumb {
+    background: var(--england-red);
+    border-radius: 4px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 0.25rem;
+    white-space: nowrap;
+    padding: 0.25rem 0;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    transition: var(--transition);
+    display: inline-block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    position: relative;
+}
+
+.nav-menu li a:hover {
+    color: var(--england-red);
+    background: rgba(192, 16, 46, 0.1);
+}
+
+.nav-menu li a.active {
+    color: var(--england-red);
+    background: rgba(192, 16, 46, 0.15);
+    border-bottom: 2px solid var(--england-red);
+}
+
+.nav-menu li a.active::before {
+    content: '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Main Content */
+main {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Vehicle Page */
+.vehicle-page {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.vehicle-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--england-white) 0%, #f8f8f8 100%);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.vehicle-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--england-red), var(--england-blue), var(--england-red));
+}
+
+.vehicle-header h1 {
+    font-size: 2.2rem;
+    background: linear-gradient(135deg, var(--england-red) 0%, var(--england-blue) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.vehicle-header .subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.website-link {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.website-link a {
+    color: var(--england-red);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.website-link a:hover {
+    text-decoration: underline;
+    color: var(--england-blue);
+}
+
+/* Company Info */
+.company-info {
+    background: linear-gradient(135deg, var(--england-blue) 0%, var(--england-blue-dark) 100%);
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.company-info::after {
+    content: '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 3rem;
+    opacity: 0.1;
+}
+
+.company-info h2 {
+    color: white;
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+.company-info h2 i {
+    color: var(--england-red);
+}
+
+/* Vehicle Content */
+.vehicle-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.vehicle-description {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--england-red);
+}
+
+.vehicle-description h2 {
+    color: var(--england-red);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.vehicle-description p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.vehicle-image {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(192, 16, 46, 0.2);
+}
+
+.vehicle-image img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* Info Cards */
+.info-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(192, 16, 46, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.info-card h2 {
+    color: var(--england-red);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--england-red);
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.info-card h2 i {
+    margin-right: 0.5rem;
+    color: var(--england-blue);
+}
+
+.equipment-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 0.75rem;
+}
+
+.equipment-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.equipment-list li i {
+    color: var(--england-red);
+    width: 20px;
+}
+
+.schedule-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(192, 16, 46, 0.2);
+    flex-wrap: wrap;
+}
+
+.schedule-item .task {
+    font-weight: 500;
+}
+
+.schedule-item .duration {
+    color: var(--england-red);
+    font-weight: 600;
+    background: rgba(192, 16, 46, 0.1);
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
+}
+
+/* Role Play */
+.roleplay {
+    background: linear-gradient(135deg, var(--england-red) 0%, var(--england-red-dark) 100%);
+    color: white;
+}
+
+.roleplay h2 {
+    color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.roleplay h2 i {
+    color: white;
+}
+
+/* Task Requirements */
+.task-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.task-list li {
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.task-list li i {
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: var(--england-red);
+}
+
+.task-list .sub-task {
+    padding-left: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.convincing-message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--england-red) 0%, var(--england-blue) 100%);
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.convincing-message i {
+    font-size: 1.2rem;
+}
+
+/* Student Work Section */
+.student-work {
+    background: linear-gradient(135deg, #fff5f5 0%, #f0f0ff 100%);
+    border: 2px solid var(--england-red);
+}
+
+[data-theme="dark"] .student-work {
+    background: linear-gradient(135deg, #2a1a2a 0%, #1a1a3a 100%);
+}
+
+.work-placeholder {
+    padding: 0.5rem;
+}
+
+.work-placeholder p {
+    margin: 1rem 0;
+}
+
+.work-placeholder ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.video-placeholder, .estimate-placeholder {
+    background: rgba(192, 16, 46, 0.1);
+    padding: 0.75rem;
+    border-radius: 12px;
+    margin: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    border: 1px solid rgba(192, 16, 46, 0.3);
+}
+
+.video-placeholder i, .estimate-placeholder i {
+    font-size: 1.5rem;
+    color: var(--england-red);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, var(--england-blue) 0%, var(--england-blue-dark) 100%);
+    margin-top: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--england-red), white, var(--england-red));
+}
+
+.footer-content {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin: 0.5rem 0;
+}
+
+.footer-section h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+
+.footer-section p {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Bouton d'impression */
+.btn-print {
+    background: var(--england-red);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.btn-print:hover {
+    background: var(--england-red-dark);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .nav-menu li a {
+        padding: 0.5rem 0.7rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-container {
+        flex-wrap: wrap;
+    }
+    
+    .nav-wrapper {
+        order: 3;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width: 100%;
+        flex: auto;
+    }
+    
+    .nav-menu {
+        justify-content: flex-start;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        max-width: 95%;
+    }
+    
+    main {
+        max-width: 95%;
+        margin: 1rem auto;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .nav-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--card-bg);
+        box-shadow: var(--shadow);
+        z-index: 1000;
+        margin-top: 0;
+        overflow-x: auto;
+    }
+    
+    .nav-wrapper.active {
+        display: block;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        white-space: normal;
+        padding: 0.5rem;
+    }
+    
+    .nav-menu li a {
+        display: block;
+        padding: 0.75rem;
+        white-space: normal;
+        text-align: center;
+    }
+    
+    .nav-menu li a.active::before {
+        display: none;
+    }
+    
+    .vehicle-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .vehicle-image {
+        order: -1;
+    }
+    
+    .vehicle-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .vehicle-header {
+        padding: 1.5rem;
+    }
+    
+    .info-card h2 {
+        font-size: 1.1rem;
+    }
+    
+    .equipment-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .schedule-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        display: none;
+    }
+    
+    .logo-img {
+        height: 35px;
+    }
+    
+    .vehicle-header h1 {
+        font-size: 1.4rem;
+    }
+    
+    .info-card {
+        padding: 1rem;
+    }
+    
+    .convincing-message {
+        font-size: 0.85rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .theme-toggle,
+    .mobile-menu-btn,
+    .footer,
+    .btn-print {
+        display: none;
+    }
+    
+    main {
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    body::before {
+        display: none;
+    }
+    
+    .vehicle-page {
+        page-break-after: avoid;
+    }
+}
+
+/* Animations supplémentaires */
+@keyframes subtlePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(192, 16, 46, 0.2);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(192, 16, 46, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(192, 16, 46, 0);
+    }
+}
+
+.active-nav-item {
+    animation: subtlePulse 1s ease;
+}

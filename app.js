@@ -64,11 +64,17 @@ class VehicleApp {
                     <h1>${vehicle.title}</h1>
                     <p class="subtitle">${vehicle.subtitle}</p>
                     <div class="website-link">
-                        <i class="fas fa-globe"></i> 
-                        <a href="${vehicle.website}" target="_blank" rel="noopener noreferrer">${vehicle.website}</a>
-                        ${vehicle.website2 ? `<br><i class="fas fa-info-circle"></i> <a href="${vehicle.website2.url}" target="_blank" rel="noopener noreferrer">${vehicle.website2.label}</a>` : ''}
+                        <div class="link-item">
+                            <i class="fas fa-globe"></i> 
+                            <a href="${vehicle.website}" target="_blank" rel="noopener noreferrer">${vehicle.website}</a>
+                        </div>
+                        ${vehicle.website2 ? `
+                        <div class="link-item">
+                            <i class="fas fa-info-circle"></i> 
+                            <a href="${vehicle.website2.url}" target="_blank" rel="noopener noreferrer">${vehicle.website2.label}</a>
+                        </div>
+                        ` : ''}
                     </div>
-
                 <!-- Vehicle Description -->
                 <div class="vehicle-content">
                     <div class="vehicle-description">

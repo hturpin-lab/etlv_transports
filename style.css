@@ -264,13 +264,13 @@ main {
     background-clip: text;
     color: transparent;
     margin-bottom: 0.5rem;
-    text-align: left;
+    text-align: center;
 }
 
 .vehicle-header .subtitle {
     font-size: 1.1rem;
     color: var(--text-light);
-    text-align: left;
+    text-align: center;
 }
 
 .website-link {

@@ -237,7 +237,7 @@ main {
 }
 
 .vehicle-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 2rem;
     padding: 2rem;
     background: linear-gradient(135deg, var(--england-white) 0%, #f8f8f8 100%);
@@ -264,11 +264,13 @@ main {
     background-clip: text;
     color: transparent;
     margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 .vehicle-header .subtitle {
     font-size: 1.1rem;
     color: var(--text-light);
+    text-align: left;
 }
 
 .website-link {

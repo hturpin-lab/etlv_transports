@@ -63,13 +63,11 @@ class VehicleApp {
                 <div class="vehicle-header">
                     <h1>${vehicle.title}</h1>
                     <p class="subtitle">${vehicle.subtitle}</p>
-                    // Dans generateVehiclePage(), remplacez la section website par :
-                        <div class="website-link">
-                            <i class="fas fa-globe"></i> 
-                            <a href="${vehicle.website}" target="_blank">${vehicle.website}</a>
-                            ${vehicle.website2 ? `<br><i class="fas fa-info-circle"></i> <a href="${vehicle.website2.url}" target="_blank">${vehicle.website2.label}</a>` : ''}
-                        </div>
-                </div>
+                    <div class="website-link">
+                        <i class="fas fa-globe"></i> 
+                        <a href="${vehicle.website}" target="_blank" rel="noopener noreferrer">${vehicle.website}</a>
+                        ${vehicle.website2 ? `<br><i class="fas fa-info-circle"></i> <a href="${vehicle.website2.url}" target="_blank" rel="noopener noreferrer">${vehicle.website2.label}</a>` : ''}
+                    </div>
 
                 <!-- Vehicle Description -->
                 <div class="vehicle-content">

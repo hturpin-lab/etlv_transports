@@ -763,3 +763,55 @@ main {
 .active-nav-item {
     animation: subtlePulse 1s ease;
 }
+/* Espacement pour la section des liens website */
+.website-link {
+    margin: 12px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.website-link .link-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+}
+
+.website-link i {
+    width: 20px;
+    color: #4caf50;
+}
+
+.website-link a {
+    color: #2e7d32;
+    text-decoration: none;
+    word-break: break-all;
+    transition: all 0.3s ease;
+}
+
+.website-link a:hover {
+    text-decoration: underline;
+    color: #1a4d2a;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    .website-link {
+        gap: 12px;
+        padding: 12px 0;
+    }
+    
+    .website-link .link-item {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .website-link a {
+        font-size: 0.85rem;
+    }
+}

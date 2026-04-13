@@ -1,13 +1,17 @@
 // Base de données des véhicules - Version simplifiée
 const vehiclesData = [
-    {
+      {
         id: "airpod",
         title: "Air Pod 2.0",
         subtitle: "An air-compressed car: the Air Pod",
         company: "MDI - Moteur Development International",
         description: "The Air Pod is an innovative vehicle running on compressed air. Zero emissions, zero pollution, it's the ideal solution for sustainable urban mobility.",
         image: "media/airpod.png",
-        website: "https://fr.mdi.lu/airpod-2-0",
+        website: "https://en.mdi.lu/airpod-2-0",
+        website2: {
+            url: "https://zeropollutionmotors.us/",
+            label: "Learn more"
+        },
         equipment: {
             title: "Equipment and Software Required for Presentation",
             items: [

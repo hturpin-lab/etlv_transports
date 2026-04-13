@@ -243,8 +243,8 @@ const vehiclesData = [
         subtitle: "The folding electric bike",
         company: "Eovolt / SH Cycles",
         description: "The Eovolt Morning Origins is a lightweight (16.5 kg) folding electric bike with 16-inch wheels. It features a 250W brushless rear hub motor with torque sensor, a 231Wh battery integrated into the seat post, and up to 50 km range. Designed and assembled in France for urban mobility.",
-        image: "media/eovolt.jpg",
-        website: "https://www.shcycles.fr/product/velo-pliant-electrique-eovolt-morning-origins/",
+        image: "https://utobikes.com/cdn/shop/files/16_Origins_V4_OPEN_BIKE_ouvert.1265.1.png?v=1756716343&width=3000",
+        website: "https://utobikes.com/en/products/og16#faq-block-collapsible_fx8F87",
         equipment: {
             title: "Equipment and Software Required for Presentation",
             items: ["A computer", "A video-projector", "Powerpoint", "Word", "Paint"]
@@ -274,7 +274,7 @@ const vehiclesData = [
             "Be as convincing as possible!"
         ]
     },
-    {
+   /* {
         id: "yikebike",
         title: "YikeBike Model V",
         subtitle: "The compact folding electric bike",
@@ -310,7 +310,7 @@ const vehiclesData = [
             "Give your clients a document (A4 paper) including a detailed preliminary estimate and the total price of the vehicle",
             "Be as convincing as possible!"
         ]
-    }
+    }*/
    
 ];
 

@@ -145,7 +145,7 @@ class VehicleApp {
                         </ul>
                         <div class="video-placeholder">
                             <i class="fas fa-video"></i>
-                            <p>Include a short video (3 minutes max)</p>
+                            <p>You can to include a short video (10 seconds at most)</p>
                         </div>
                         <div class="estimate-placeholder">
                             <i class="fas fa-file-invoice-dollar"></i>

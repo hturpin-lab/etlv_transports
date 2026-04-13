@@ -763,51 +763,51 @@ main {
 .active-nav-item {
     animation: subtlePulse 1s ease;
 }
-/* Espacement pour la section des liens website */
+/* Style amélioré pour la section des liens website */
 .website-link {
-    margin: 12px 0;
-    padding: 10px 0;
+    margin: 0.75rem 0;
+    padding: 0.5rem 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
     align-items: center;
-    justify-content: center;
+    gap: 0.6rem;
 }
 
 .website-link .link-item {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 4px 0;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .website-link i {
     width: 20px;
-    color: #4caf50;
+    font-size: 0.9rem;
 }
 
 .website-link a {
-    color: #2e7d32;
+    color: var(--england-red);
     text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
     word-break: break-all;
-    transition: all 0.3s ease;
 }
 
 .website-link a:hover {
     text-decoration: underline;
-    color: #1a4d2a;
+    color: var(--england-blue);
 }
 
-/* Responsive pour mobile */
+/* Responsive pour les liens website */
 @media (max-width: 768px) {
     .website-link {
-        gap: 12px;
-        padding: 12px 0;
+        gap: 0.8rem;
+        padding: 0.6rem 0;
     }
     
     .website-link .link-item {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         text-align: center;
     }
     

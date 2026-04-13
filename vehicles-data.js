@@ -41,7 +41,7 @@ const vehiclesData = [
             "  • The vehicle (choose one or several pictures to name its components – battery, engine...)",
             "  • How the vehicle works",
             "  • The technical characteristics of the vehicle – power (These will appear in a tabular form)",
-            "Include a short video (3 minutes at most)",
+            "You can to include a short video (10 sec at most) ",
             "Explain why this vehicle can be said to be sustainable",
             "Give your clients a document (A4 paper) including a detailed preliminary estimate and the total price of the vehicle",
             "Be as convincing as possible!"
@@ -84,7 +84,7 @@ const vehiclesData = [
         "  • The vehicle (choose one or several pictures to name its components – battery, engine, motor hub...)",
         "  • How the vehicle works",
         "  • The technical characteristics of the vehicle – speed, range, battery (These will appear in a tabular form)",
-        "Include a short video (3 minutes at most)",
+        "You can to include a short video (10 sec at most) ",
         "Explain why this vehicle can be said to be sustainable",
         "Give your clients a document (A4 paper) including a detailed preliminary estimate and the total price of the vehicle",
         "Be as convincing as possible!"
@@ -120,7 +120,7 @@ const vehiclesData = [
             "  • The vehicle (choose one or several pictures to name its components – solar panels, wind turbine, battery, electric motor...)",
             "  • How the vehicle works",
             "  • The technical characteristics of the vehicle – speed, range, battery (These will appear in a tabular form)",
-            "Include a short video (3 minutes at most)",
+            "You can to include a short video (10 sec at most) ",
             "Explain why this vehicle can be said to be sustainable",
             "Give your clients a document (A4 paper) including a detailed preliminary estimate and the total price of the vehicle",
             "Be as convincing as possible!"
@@ -157,7 +157,7 @@ const vehiclesData = [
             "  • The vehicle (choose one or several pictures to name its components – motors, batteries, accelerometer, gyroscope, microcontroller...)",
             "  • How the vehicle works",
             "  • The technical characteristics of the vehicle – speed, range, battery (These will appear in a tabular form)",
-            "Include a short video (3 minutes at most)",
+            "You can to include a short video (10 sec at most) ",
             "Explain why this vehicle can be said to be sustainable",
             "Give your clients a document (A4 paper) including a detailed preliminary estimate and the total price of the vehicle",
             "Be as convincing as possible!"
@@ -194,7 +194,7 @@ const vehiclesData = [
             "  • The vehicle (choose one or several pictures to name its components – gyroscope, electric motor, battery, controller...)",
             "  • How the vehicle works",
             "  • The technical characteristics of the vehicle – speed, range, weight (These will appear in a tabular form)",
-            "Include a short video (3 minutes at most)",
+            "You can to include a short video (10 sec at most) ",
             "Explain why this vehicle can be said to be sustainable",
             "Give your clients a document (A4 paper) including a detailed preliminary estimate and the total price of the vehicle",
             "Be as convincing as possible!"
@@ -231,7 +231,7 @@ const vehiclesData = [
             "  • The vehicle (choose one or several pictures to name its components – fuel cell stack, hydrogen tanks, battery, electric motor...)",
             "  • How the vehicle works",
             "  • The technical characteristics of the vehicle – power, range, refueling time (These will appear in a tabular form)",
-            "Include a short video (3 minutes at most)",
+            "You can to include a short video (10 sec at most) ",
             "Explain why this vehicle can be said to be sustainable",
             "Give your clients a document (A4 paper) including a detailed preliminary estimate and the total price of the vehicle",
             "Be as convincing as possible!"
@@ -268,7 +268,7 @@ const vehiclesData = [
             "  • The vehicle (choose one or several pictures to name its components – motor, battery, folding mechanism, torque sensor...)",
             "  • How the vehicle works",
             "  • The technical characteristics of the vehicle – power, range, weight (These will appear in a tabular form)",
-            "Include a short video (3 minutes at most)",
+            "You can to include a short video (10 sec at most) ",
             "Explain why this vehicle can be said to be sustainable",
             "Give your clients a document (A4 paper) including a detailed preliminary estimate and the total price of the vehicle",
             "Be as convincing as possible!"
@@ -305,7 +305,7 @@ const vehiclesData = [
             "  • The vehicle (choose one or several pictures to name its components – electric motor, battery, folding mechanism, wheels...)",
             "  • How the vehicle works",
             "  • The technical characteristics of the vehicle – speed, range, weight (These will appear in a tabular form)",
-            "Include a short video (3 minutes at most)",
+            "You can to include a short video (10 sec at most) ",
             "Explain why this vehicle can be said to be sustainable",
             "Give your clients a document (A4 paper) including a detailed preliminary estimate and the total price of the vehicle",
             "Be as convincing as possible!"

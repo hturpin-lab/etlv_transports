@@ -66,6 +66,7 @@ class VehicleApp {
                     <p class="website-link">
                         <i class="fas fa-globe"></i> 
                         <a href="${vehicle.website}" target="_blank">${vehicle.website}</a>
+                         ${vehicle.website2 ? `<br><i class="fas fa-info-circle"></i> <a href="${vehicle.website2.url}" target="_blank">${vehicle.website2.label}</a>` : ''}
                     </p>
                 </div>
 
